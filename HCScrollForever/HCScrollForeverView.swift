@@ -17,9 +17,11 @@ class HCScrollForeverView: UIView {
     var imageNames:[String] = ["1","2","3","4","5","6","7"]
     let pageLabel:UILabel = UILabel()
 
-    init(frame: CGRect, images:[String]) {
+    init(frame: CGRect, images:[String]?) {
         super.init(frame: frame)
-        imageNames = images
+        if images != nil {
+            imageNames = images!
+        }
         setup()
     }
 
