@@ -68,12 +68,10 @@ class HCScrollForeverView: UIView {
         pageLabel.backgroundColor = UIColor(white: 1.0, alpha: 0.5)
         pageLabel.textAlignment = .center
         addSubview(pageLabel)
-        start()
-
     }
     
     @objc fileprivate func timerAction() {
-        
+
         currentPage += 1
         
         if currentPage == 3 {
@@ -82,7 +80,6 @@ class HCScrollForeverView: UIView {
         
         scrollV.setContentOffset(CGPoint(x: bounds.width * CGFloat(currentPage), y: 0), animated: currentPage != 0)
     }
-    
     
 }
 

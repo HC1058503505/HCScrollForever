@@ -70,7 +70,12 @@ class ViewController: UIViewController {
         }
         scrollV.setContentOffset(CGPoint(x: scrollWidth * CGFloat(currentPage), y: 0), animated: currentPage != 0)
     }
-
+    
+    deinit {
+        // 销毁定时器
+        timer?.invalidate()
+        timer = nil
+    }
 }
 
 extension ViewController : UIScrollViewDelegate{
