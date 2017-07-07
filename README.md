@@ -20,7 +20,7 @@ func timerAction() {
 ```
 
 # 方法二
-假设有7张图片，使用一个`UIScrollView`,设置它的`contentSize`为screenWidth * 3，然后依次添加2个UIImageView并设置图片。开启定时器后，在定时器方法里进行处理，主要确定当前页的索引，但是控制在1~3，然后设置UIScrollView的contentOffSet以及动画，在UIScrollView滑动的时候，要调整UIImageView的图片，以及位置
+假设有7张图片，使用一个`UIScrollView`,设置它的`contentSize`为screenWidth * 3，然后依次添加2个UIImageView并设置图片。开启定时器后，在定时器方法里进行处理，主要确定当前页的索引，但是控制在1~3，然后设置UIScrollView的contentOffSet以及动画，在UIScrollView滑动的时候，要调整UIImageView的图片以及位置
 ```swift
 // 设置contentSize
 scrollV.contentSize = CGSize(width: bounds.width * 3.0, height:bounds.height)
