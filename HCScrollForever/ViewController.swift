@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     var currentPage:Int = 0
     var scrollDictor:Bool = false
     
-    // test branch
+    // 定时器
     var timer:Timer?
     
     override func viewDidLoad() {
